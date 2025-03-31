@@ -16,11 +16,6 @@ export interface AutocompleteProps {
   onSelect: (item: Item) => void;
 
   /**
-   * Additional CSS class for the container.
-   */
-  className?: string;
-
-  /**
    * Debounce time in milliseconds for input changes.
    * @default 300
    */

@@ -6,7 +6,6 @@ import SuggestionItem from "./SuggestionItem";
 
 const Autocomplete = ({
   placeholder = "Search...",
-  className = "",
   debounceTime = 300,
   options = [],
   loading = false,
@@ -93,7 +92,7 @@ const Autocomplete = ({
   const isEmpty = !options.length && inputValue.length > 1 && isDirty;
   
   return (
-    <div className={`${styles.container} ${className}`}>
+    <div className={styles.container}>
       <div>
         <label htmlFor="autocomplete" className={styles.label}>
           Search users
